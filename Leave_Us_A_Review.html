@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leave us a review 💖</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<title>Leave us a review 💜</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -42,9 +42,9 @@
     position: absolute;
     inset: 0;
     background: linear-gradient(180deg,
-      rgba(58,26,48,0.25) 0%,
-      rgba(58,26,48,0.45) 45%,
-      rgba(58,26,48,0.88) 100%);
+      rgba(58,26,48,0.15) 0%,
+      rgba(58,26,48,0.4) 50%,
+      rgba(58,26,48,0.9) 100%);
   }
   .hero .hero-text {
     position: relative;
@@ -70,17 +70,25 @@
     color: #ffffff;
     line-height: 1.15;
     margin-bottom: 10px;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.35);
   }
   .hero .sub {
     font-size: 14px;
     color: #ffffff;
     opacity: 0.92;
   }
-  .hero .stars {
-    font-size: 22px;
-    letter-spacing: 3px;
-    margin-top: 12px;
+  .hero .stars { margin-top: 14px; }
+  .hero .stars span {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 4px;
+    filter: drop-shadow(0 4px 3px rgba(0,0,0,0.5)) drop-shadow(0 1px 1px rgba(255,220,120,0.6));
   }
+  .hero .stars span:nth-child(1) { transform: rotate(-8deg) scale(0.95); }
+  .hero .stars span:nth-child(2) { transform: rotate(5deg); }
+  .hero .stars span:nth-child(3) { transform: scale(1.15); }
+  .hero .stars span:nth-child(4) { transform: rotate(-5deg); }
+  .hero .stars span:nth-child(5) { transform: rotate(8deg) scale(0.95); }
   .body { padding: 28px 26px 34px; }
   .intro {
     font-size: 14.5px;
@@ -88,7 +96,19 @@
     margin-bottom: 26px;
   }
   .intro p { margin-bottom: 12px; }
-  .intro .sign { font-weight: 600; }
+  .fancy {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.08em;
+  }
+  .karma {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16.5px;
+    line-height: 1.55;
+  }
   .qblock { margin-bottom: 24px; }
   .qlabel {
     font-size: 14.5px;
@@ -177,6 +197,14 @@
     opacity: 0.75;
     text-align: center;
   }
+  .signoff {
+    margin-top: 24px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 17px;
+  }
   .footer {
     background: #fcd9ec;
     text-align: center;
@@ -191,22 +219,21 @@
 <div class="card">
 
   <div class="hero">
-    <img src="https://assets.cdn.filesafe.space/1vA1AJ4I5RrqbeQNHvSv/media/6a968433648f56e7e445a28c.png" alt="Pretty Intricate in Ibiza">
+    <img src="https://assets.cdn.filesafe.space/1vA1AJ4I5RrqbeQNHvSv/media/6a9c59199a2eb1d780a505af.jpg" alt="Pretty Intricate in Ibiza">
     <div class="veil"></div>
     <div class="hero-text">
-      <div class="eyebrow">Pretty Intricate 💖</div>
+      <div class="eyebrow">Pretty Intricate 💜</div>
       <h1>Could you spare two minutes to review us?</h1>
-      <div class="sub">It means more to us than you know</div>
-      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <div class="sub">It means more to us than you know 💋</div>
+      <div class="stars"><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span></div>
     </div>
   </div>
 
   <div class="body">
 
     <div class="intro">
-      <p>We know writing a review can feel like homework, so we have made it easy. Answer the quick questions below and we will draft the review for you. You can edit it, then copy and post it to Trustpilot with one tap.</p>
-      <p>And we are firm believers that good karma finds the people who leave lovely reviews 😇</p>
-      <p class="sign">Thank you so much, Nikki x</p>
+      <p>We know writing a review can feel like <span class="fancy">homework</span>, so we have made it easy. Answer the quick questions below and we will draft the review for you. You can edit it, then copy and post it to Trustpilot with one tap.</p>
+      <p class="karma">And we are firm believers that good karma finds the people who leave lovely reviews 🔮</p>
     </div>
 
     <div class="qblock">
@@ -219,11 +246,11 @@
         <button class="chip" data-text="a bottomless brunch">Bottomless brunch 🥂</button>
         <button class="chip" data-text="the ladies night show and dinner">Ladies night show &amp; dinner 👑</button>
         <button class="chip" data-text="a cheeky butler">Cheeky butler 🍑</button>
-        <button class="chip" data-text="a strip show">Strip show 🔥</button>
-        <button class="chip" data-text="a life drawing class">Life drawing 🎨</button>
+        <button class="chip" data-text="a strip show">Strip show 💋</button>
+        <button class="chip" data-text="a life drawing class">Life drawing 🍆</button>
         <button class="chip" data-text="a dance class">Dance class 💃</button>
         <button class="chip" data-text="a cocktail masterclass">Cocktail masterclass 🍹</button>
-        <button class="chip" data-text="a pamper party">Pamper party 💅</button>
+        <button class="chip" data-text="a pamper party">Pamper party 💄</button>
         <button class="chip" data-text="body paint and glitter">Body paint &amp; glitter ✨</button>
         <button class="chip" data-text="a photoshoot">Photoshoot 📸</button>
         <button class="chip" data-text="a sunset harbour meal">Sunset harbour meal 🌅</button>
@@ -237,8 +264,8 @@
         <button class="chip" data-text="hen do">Hen do 💍</button>
         <button class="chip" data-text="stag do">Stag do 🍻</button>
         <button class="chip" data-text="birthday">Birthday 🎂</button>
-        <button class="chip" data-text="girls' trip">Girls' trip 💃</button>
-        <button class="chip" data-text="holiday">Just a holiday ☀️</button>
+        <button class="chip" data-text="girls' trip">Girls' trip 🍒</button>
+        <button class="chip" data-text="holiday">Just a holiday 🌴</button>
       </div>
     </div>
 
@@ -263,14 +290,16 @@
     </div>
 
     <div class="steps">
-      1. Copy your review &nbsp;•&nbsp; 2. Open Trustpilot &nbsp;•&nbsp; 3. Paste, choose your stars and post 💖
+      1. Copy your review &nbsp;•&nbsp; 2. Open Trustpilot &nbsp;•&nbsp; 3. Paste, choose your stars and post 💜
     </div>
+
+    <div class="signoff">Thank you so much, Nikki x</div>
 
   </div>
 
   <div class="footer">
     <b>Pretty Intricate</b> • Ibiza Party Transfers • Male Strip Show Ibiza<br>
-    Thank you for celebrating with us 💖
+    Thank you for celebrating with us 💜
   </div>
 
 </div>
