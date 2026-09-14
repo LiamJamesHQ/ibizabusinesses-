@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pretty Intricate Brand Kit</title>
+<meta property="og:title" content="Pretty Intricate Brand Kit">
+<meta property="og:description" content="Logo, colour, type, components, emoji, voice and build rules for every Pretty Intricate asset.">
+<meta property="og:image" content="https://assets.cdn.filesafe.space/1vA1AJ4I5RrqbeQNHvSv/media/6a28f6e135c34c72c1d78ca0.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blush:#fff0f7;
+  --white:#ffffff;
+  --candy:#fcd9ec;
+  --candy-light:#f8e3ef;
+  --pink-a:#fbcfe8;
+  --lilac-a:#ead4fb;
+  --lilac:#d9a8e4;
+  --hot:#ea4c9c;
+  --magenta:#c026d3;
+  --orchid:#b04fb4;
+  --navy:#3a3f7e;
+  --ink:#2b2b33;
+  --grey:#6e6e7a;
+  --serif:'Lora',Georgia,'Times New Roman',serif;
+  --sans:'Source Sans 3','Segoe UI',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--blush);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+i,em,.italic{font-style:normal !important}
+img{max-width:100%;display:block}
+p{margin:0 0 12px}
+
+.card{max-width:900px;margin:32px auto;background:var(--white);border-radius:24px;overflow:hidden;box-shadow:0 14px 44px rgba(176,79,180,.12)}
+
+/* Hero */
+.hero{position:relative;height:460px;overflow:hidden;
+  background:
+    radial-gradient(circle at 22% 22%, rgba(255,244,200,.98) 0, rgba(255,210,130,.65) 10%, rgba(255,210,130,0) 32%),
+    linear-gradient(180deg,#f9c493 0%,#eea0b8 26%,#b795d8 50%,#6b86c6 70%,#33538c 100%);}
+.hero::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;
+  background:linear-gradient(180deg,rgba(18,8,30,0) 34%,rgba(18,8,30,.52) 72%,rgba(18,8,30,.22) 87%,rgba(255,255,255,1) 100%);}
+.hero-logo{position:absolute;top:26px;left:34px;width:150px;z-index:2}
+.hero-title{position:absolute;left:48px;right:48px;bottom:86px;z-index:2;margin:0;font-family:var(--serif);font-weight:700;font-size:48px;line-height:1.12;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.35)}
+.hero-title .name{color:var(--hot)}
+.hero-note{position:absolute;right:22px;bottom:22px;z-index:2;background:rgba(255,255,255,.82);color:var(--navy);font-size:13px;font-weight:600;padding:6px 11px;border-radius:999px}
+
+/* Sections */
+.sec{padding:36px 48px 20px}
+.sec:last-of-type{padding-bottom:36px}
+.h2{display:flex;align-items:center;gap:12px;margin:0 0 6px;padding-bottom:10px;border-bottom:2px solid var(--lilac);font-family:var(--serif);font-weight:700;font-size:27px;line-height:1.25;color:var(--navy)}
+.lead{margin:16px 0 22px;max-width:72ch}
+.rules{list-style:none;margin:0 0 18px;padding:0}
+.rules li{margin:0 0 10px}
+.rules li b{color:var(--navy)}
+.label{margin:22px 0 10px;font-size:14px;font-weight:700;color:var(--orchid);letter-spacing:.02em}
+.label:first-child{margin-top:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+
+/* Logo tiles */
+.logo-tile{border:1px solid var(--lilac);border-radius:16px;overflow:hidden;background:var(--white)}
+.logo-tile .ground{height:170px;display:flex;align-items:center;justify-content:center;padding:18px}
+.logo-tile .ground.photo{background:
+    radial-gradient(circle at 25% 25%, rgba(255,244,200,.95) 0, rgba(255,210,130,.5) 14%, rgba(255,210,130,0) 36%),
+    linear-gradient(180deg,#f9c493 0%,#eea0b8 40%,#b795d8 100%)}
+.logo-tile .ground.plain{background:var(--white)}
+.logo-tile .ground.blush{background:var(--blush)}
+.logo-tile .ground img{max-height:130px;width:auto}
+.logo-tile .meta{padding:12px 16px 14px;border-top:1px solid #f3d9ea}
+.logo-tile .meta b{display:block;font-family:var(--serif);font-weight:600;font-size:17px;color:var(--navy)}
+.logo-tile .meta span{font-size:14px;color:var(--grey)}
+
+/* Swatches */
+.swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.sw{border:1px solid #efd6e6;border-radius:14px;overflow:hidden}
+.sw .chip{height:70px}
+.sw .meta{padding:10px 13px 12px}
+.sw .meta b{display:block;font-family:var(--serif);font-weight:600;font-size:16px;color:var(--ink)}
+.sw .meta code{font-family:var(--sans);font-weight:700;font-size:14px;color:var(--navy)}
+.sw .meta span{display:block;font-size:13.5px;line-height:1.4;color:var(--grey);margin-top:3px}
+
+/* Type samples */
+.type-row{display:grid;grid-template-columns:1fr 210px;gap:20px;align-items:baseline;padding:14px 0;border-bottom:1px solid #f3d9ea}
+.type-row:last-child{border-bottom:0}
+.type-row .spec{font-size:13.5px;color:var(--grey);line-height:1.45}
+.t-doc{font-family:var(--serif);font-weight:700;font-size:42px;line-height:1.1;color:var(--magenta)}
+.t-sec{font-family:var(--serif);font-weight:700;font-size:27px;color:var(--navy)}
+.t-card{font-family:var(--serif);font-weight:600;font-size:21px;color:var(--ink)}
+.t-body{font-size:17px;color:var(--ink)}
+.t-label{font-size:17px;font-weight:700;color:var(--navy)}
+.t-small{font-size:14.5px;color:var(--grey)}
+
+/* Components */
+.eyebrow{display:inline-block;background:var(--candy);color:var(--navy);font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:8px}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{background:var(--candy);border:1px solid var(--lilac);color:var(--navy);font-weight:600;font-size:14.5px;line-height:1.3;padding:7px 13px;border-radius:999px}
+.status{background:var(--white);border:1px solid var(--lilac);border-radius:12px;padding:14px 18px;text-align:center;font-weight:600;color:var(--navy)}
+
+.gcard{background:linear-gradient(135deg,var(--pink-a) 0%,var(--lilac-a) 100%);border:1px solid var(--lilac);border-radius:14px;padding:22px 24px 20px}
+.gcard .head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 8px}
+.gcard h4{margin:0;font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.3;color:var(--ink)}
+.gcard .price{white-space:nowrap;background:rgba(255,255,255,.7);border:1px solid var(--lilac);color:var(--navy);font-weight:700;font-size:14.5px;padding:4px 11px;border-radius:999px}
+.gcard p{margin:0;color:var(--ink)}
+
+.band{position:relative;border-radius:16px;overflow:hidden;padding:26px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,244,200,.9) 0, rgba(255,210,130,.5) 12%, rgba(255,210,130,0) 34%),
+    linear-gradient(180deg,#f9c493 0%,#eea0b8 30%,#b795d8 62%,#6b86c6 100%)}
+.band::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;background:rgba(255,255,255,.62)}
+.band .grid2{position:relative;z-index:1}
+.tcard{background:rgba(252,217,236,.8);border:1px solid rgba(217,168,228,.95);border-radius:14px;padding:20px 22px;backdrop-filter:blur(2px)}
+.tcard h4{margin:0 0 8px;font-family:var(--serif);font-weight:600;font-size:20px;color:var(--ink)}
+.tcard p{margin:0}
+
+.panel{background:var(--candy-light);border-radius:12px;padding:22px 26px}
+.panel p{margin:0}
+.panel b{color:var(--ink)}
+
+.item{background:#fff5fa;border:1px solid #f0cfe3;border-radius:14px;padding:22px 26px 20px}
+.item h4{display:flex;align-items:center;gap:10px;margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid var(--lilac);font-family:var(--serif);font-weight:600;font-size:20px;color:var(--navy)}
+.kv{margin:0 0 8px}
+.kv b{color:var(--navy)}
+.sub{margin:14px 0 8px;font-weight:700;color:var(--navy)}
+.inc{list-style:none;margin:0 0 14px;padding:0}
+.inc li{margin:0 0 7px}
+.price-line{margin:0 0 6px;font-family:var(--serif);font-weight:700;font-size:19px;color:var(--navy)}
+.price-line .amount{color:var(--hot)}
+.caveat{margin:0;font-size:14.5px;color:var(--grey)}
+
+.signoff{text-align:center;color:var(--grey);font-size:17px;padding:8px 20px 0}
+
+.demo{margin:0 0 26px}
+.demo-caption{margin:10px 0 0;font-size:14px;color:var(--grey)}
+
+/* Voice cards */
+.voice{background:linear-gradient(135deg,var(--pink-a) 0%,var(--lilac-a) 100%);border:1px solid var(--lilac);border-radius:14px;padding:22px 24px}
+.voice h4{margin:0 0 10px;font-family:var(--serif);font-weight:600;font-size:21px;color:var(--ink)}
+.voice .sample{background:rgba(255,255,255,.72);border-radius:10px;padding:14px 16px;margin:12px 0 0;color:var(--ink)}
+
+/* Footer */
+.foot{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:32px 48px;border-top:1px solid #f3d6e6;background:var(--white)}
+.foot img.logo{width:150px}
+.foot img.qr{width:108px;border-radius:8px}
+.foot .brand{text-align:center;font-family:var(--serif);font-weight:600;font-size:19px;color:var(--navy)}
+.foot .brand span{display:block;font-family:var(--sans);font-weight:400;font-size:14px;color:var(--grey);margin-top:2px}
+
+@media (max-width:680px){
+  .card{margin:0;border-radius:0}
+  .hero{height:360px}
+  .hero-logo{width:120px;top:18px;left:20px}
+  .hero-title{font-size:34px;left:22px;right:22px;bottom:72px}
+  .sec{padding:28px 22px 14px}
+  .grid2,.grid3{grid-template-columns:1fr}
+  .swatches{grid-template-columns:1fr 1fr}
+  .type-row{grid-template-columns:1fr}
+  .t-doc{font-size:34px}
+  .foot{flex-direction:column;padding:28px 22px}
+}
+</style>
+</head>
+<body>
+<div class="card">
+
+  <!-- HERO: the component in use. Ground is a placeholder gradient; swap for a full-bleed photograph. -->
+  <div class="hero">
+    <img class="hero-logo" src="https://assets.cdn.filesafe.space/1vA1AJ4I5RrqbeQNHvSv/media/6a28f4692c82431d9ec62032.png" alt="Pretty Intricate">
+    <h1 class="hero-title">Pretty Intricate <span class="name">Brand Kit</span> 💜</h1>
+    <div class="hero-note">Placeholder ground. Swap for a full-bleed photograph.</div>
+  </div>
+
+  <!-- INTRO -->
+  <div class="sec">
+    <span class="eyebrow">Brand kit</span>
+    <p class="lead" style="margin-top:16px">This is the reference for every Pretty Intricate asset: quotes, booking confirmations, product pages, brochures, reminders. Each rule below is shown live, so the document doubles as a working example. Build from this, not from the old templates.</p>
+  </div>
+
+  <!-- LOGO -->
+  <div class="sec">
+    <h2 class="h2">🏷️ Logo</h2>
+    <p class="lead">Every Pretty Intricate document carries the logo. There are three assets and each has one job.</p>
+    <div class="grid3">
+      <div class="logo-tile">
+        <div class="ground photo"><img src="https://assets.cdn.filesafe.space/1vA1AJ4I5RrqbeQNHvSv/media/6a28f4692c82431d9ec62032.png" alt="Transparent logo"></div>
+        <div class="meta"><b>Transparent PNG</b><span>The default. Always attempted first, on every ground.</span></div>
+      </div>
+      <div class="logo-tile">
+        <div class="ground plain"><img src="https://assets.cdn.filesafe.space/1vA1AJ4I5RrqbeQNHvSv/media/6a28f6e135c34c72c1d78ca0.jpg" alt="Solid background logo"></div>
+        <div class="meta"><b>Solid JPG</b><span>Fallback only. Plain white grounds, where its square edge disappears.</span></div>
+      </div>
+      <div class="logo-tile">
+        <div class="ground blush"><img src="https://assets.cdn.filesafe.space/1vA1AJ4I5RrqbeQNHvSv/media/6a333cd50a683b64fecd21c3.png" alt="QR code"></div>
+        <div class="meta"><b>QR code</b><span>Foot of every document, beside the logo.</span></div>
+      </div>
+    </div>
+    <p class="label">Rules</p>
+    <ul class="rules">
+      <li>✅ <b>Transparent first.</b> The transparent PNG is used on heroes, coloured grounds and photographs. The solid JPG only appears on plain white, never in a hero, because its white square shows.</li>
+      <li>☀️ <b>On a hero</b> the logo sits top left over the lightest part of the image, usually the sky. Never over the dark veil at the bottom, where it cannot be read.</li>
+      <li>📐 <b>Clear space</b> around the logo equals the height of the pink triangle on every side. Minimum width on screen is 120px.</li>
+      <li>🚫 <b>Never</b> stretch, recolour, rotate, crop the triangle, or add a drop shadow.</li>
+      <li>📱 <b>QR code</b> goes at the foot of every document next to the logo, on white or blush only.</li>
+    </ul>
+  </div>
+
+  <!-- COLOUR -->
+  <div class="sec">
+    <h2 class="h2">🎨 Colour</h2>
+    <p class="lead">Pretty Intricate is always candy pink and hot pink. Navy does the reading work so the pinks stay bright. Each colour has one job.</p>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#ea4c9c"></div><div class="meta"><b>Hot pink</b><code>#EA4C9C</code><span>The client's name in a hero, prices, the heart of the brand</span></div></div>
+      <div class="sw"><div class="chip" style="background:#c026d3"></div><div class="meta"><b>Vivid magenta</b><code>#C026D3</code><span>Document titles on a white or blush ground</span></div></div>
+      <div class="sw"><div class="chip" style="background:#b04fb4"></div><div class="meta"><b>Orchid</b><code>#B04FB4</code><span>Section headings over a photograph, small labels</span></div></div>
+      <div class="sw"><div class="chip" style="background:#3a3f7e"></div><div class="meta"><b>Navy</b><code>#3A3F7E</code><span>Section headings on white, bold labels, pill text</span></div></div>
+      <div class="sw"><div class="chip" style="background:#fcd9ec"></div><div class="meta"><b>Candy pink</b><code>#FCD9EC</code><span>Pills, eyebrows, translucent cards</span></div></div>
+      <div class="sw"><div class="chip" style="background:linear-gradient(135deg,#fbcfe8,#ead4fb)"></div><div class="meta"><b>Card gradient</b><code>#FBCFE8 to #EAD4FB</code><span>Diagonal fill for service and package cards</span></div></div>
+      <div class="sw"><div class="chip" style="background:#d9a8e4"></div><div class="meta"><b>Lilac</b><code>#D9A8E4</code><span>Every border and heading rule</span></div></div>
+      <div class="sw"><div class="chip" style="background:#fff0f7;border-bottom:1px solid #efd6e6"></div><div class="meta"><b>Blush</b><code>#FFF0F7</code><span>Page background behind the white card</span></div></div>
+      <div class="sw"><div class="chip" style="background:#f8e3ef"></div><div class="meta"><b>Candy light</b><code>#F8E3EF</code><span>Info panels and item cards</span></div></div>
+      <div class="sw"><div class="chip" style="background:#2b2b33"></div><div class="meta"><b>Charcoal</b><code>#2B2B33</code><span>Body text</span></div></div>
+      <div class="sw"><div class="chip" style="background:#6e6e7a"></div><div class="meta"><b>Grey</b><code>#6E6E7A</code><span>Caveats, small print, the sign-off</span></div></div>
+      <div class="sw"><div class="chip" style="background:#ffffff;border-bottom:1px solid #efd6e6"></div><div class="meta"><b>White</b><code>#FFFFFF</code><span>The card itself and hero titles</span></div></div>
+    </div>
+    <p class="label">Rules</p>
+    <ul class="rules">
+      <li>💜 The purple heart is the only heart. Never the pink sparkling heart, never 🖤.</li>
+      <li>🌸 Hot pink is an accent, not a fill. It goes on words and prices, never on large areas.</li>
+      <li>🖋️ Navy carries headings and labels on white. Over a photograph headings turn white or orchid.</li>
+      <li>🚫 No black text anywhere. Charcoal is as dark as it goes.</li>
+    </ul>
+  </div>
+
+  <!-- TYPOGRAPHY -->
+  <div class="sec">
+    <h2 class="h2">✍️ Typography</h2>
+    <p class="lead">Two faces. Lora for everything that is a heading, Source Sans 3 for everything that is read. Both are Google Fonts.</p>
+    <div class="type-row"><div class="t-doc">Pretty Intricate Ibiza</div><div class="spec">Document title. Lora 700, 42px. Vivid magenta on white, white on a hero.</div></div>
+    <div class="type-row"><div class="t-sec">Your Booking</div><div class="spec">Section heading. Lora 700, 27px, navy, lilac rule beneath. Always led by an emoji.</div></div>
+    <div class="type-row"><div class="t-card">The Classic Hen</div><div class="spec">Card heading. Lora 600, 21px, charcoal.</div></div>
+    <div class="type-row"><div class="t-body">Your cheeky butler is locked in for tonight. Here is everything you need.</div><div class="spec">Body. Source Sans 3 400, 17px, line height 1.6, charcoal.</div></div>
+    <div class="type-row"><div class="t-label">Location:</div><div class="spec">Label. Source Sans 3 700, 17px, navy. Value follows in body weight.</div></div>
+    <div class="type-row"><div class="t-small">The villa version has travel and setup fees on top.</div><div class="spec">Small print. Source Sans 3 400, 14.5px, grey.</div></div>
+    <p class="label">Rules</p>
+    <ul class="rules">
+      <li>🚫 No italics anywhere. The italic style is disabled in every file.</li>
+      <li>🔠 Headings are title case. Body copy is sentence case with a capital at the start of every sentence and on names and places.</li>
+      <li>📏 Body lines run no longer than about 72 characters. Wider than that, add a column.</li>
+      <li>🔤 Fallbacks are Georgia for Lora and Segoe UI or Arial for Source Sans 3, so nothing breaks if the fonts fail to load.</li>
+    </ul>
+  </div>
+
+  <!-- COMPONENTS -->
+  <div class="sec">
+    <h2 class="h2">🧩 Components</h2>
+    <p class="lead">Every piece a document is built from, rendered here exactly as it should appear. Copy these, do not redraw them.</p>
+
+    <p class="label">Hero</p>
+    <p>See the top of this page. Full-bleed photograph, no padding, title low left in white Lora 700 with the client's name in hot pink and a 💜 after it. A dark veil sits under the title for legibility and the image dissolves into the page at the bottom. Transparent logo top left over the sky.</p>
+
+    <p class="label">Eyebrow</p>
+    <div class="demo"><span class="eyebrow">Example itineraries</span>
+      <p class="demo-caption">A small candy pill above a heading that names the section type. Optional. One per section at most.</p></div>
+
+    <p class="label">Pills row</p>
+    <div class="demo">
+      <div class="pills"><span class="pill">🥂 Cheeky butler at your villa</span><span class="pill">⏰ 7:00 PM approx</span><span class="pill">📅 Friday 4th September</span><span class="pill">👥 Group of 5</span></div>
+      <p class="demo-caption">Three or four key facts directly under the hero, so the essentials are readable before the detail. Emoji first, then text.</p></div>
+
+    <p class="label">Status banner</p>
+    <div class="demo"><div class="status">✅ Balance received. You are fully paid.</div>
+      <p class="demo-caption">Sits above the pills on confirmations. One line, one emoji, navy on white with a lilac border.</p></div>
+
+    <p class="label">Gradient card</p>
+    <div class="demo">
+      <div class="grid2">
+        <div class="gcard">
+          <div class="head"><h4>🥂 The Classic Hen</h4><span class="price">£249pp</span></div>
+          <p>✈️ Airport transfer with fizz · 🥂 Bottomless brunch and cheeky butler · ⛵ Boat trip with tapas and sangria · 🌃 Playa d'en Bossa with 3hrs unlimited bar and club</p>
+        </div>
+        <div class="gcard">
+          <div class="head"><h4>💎 The Luxury Escape</h4><span class="price">£295pp</span></div>
+          <p>✈️ Airport transfer with fizz · 🍹 Cocktail masterclass · 🛥️ VIP boat party · 🌅 Sunset meal in Ibiza Town · 🌃 3hrs unlimited bar and club</p>
+        </div>
+      </div>
+      <p class="demo-caption">Packages, services and products. Diagonal pink to lilac fill, lilac border, price as a pill on the heading line. Items run inline with a middle dot between them.</p></div>
+
+    <p class="label">Translucent card over a photograph</p>
+    <div class="demo">
+      <div class="band">
+        <div class="grid2">
+          <div class="tcard"><h4>🌟 Curated Experiences</h4><p>From transfers to boat trips, every experience is hand picked and properly organised.</p></div>
+          <div class="tcard"><h4>📅 Effortless Planning</h4><p>We handle the logistics so your group can focus on having the best time. One booking, everything sorted.</p></div>
+        </div>
+      </div>
+      <p class="demo-caption">For sections that sit over a washed photograph. The image is veiled to about 60 percent white and the cards float on top. Placeholder ground shown here.</p></div>
+
+    <p class="label">Info panel</p>
+    <div class="demo"><div class="panel"><p>Please bring <b>€150 in euros cash</b> on the day of the strip show. The performer is paid this directly. It must be euros, not pounds. Sterling cannot be accepted.</p></div>
+      <p class="demo-caption">One important instruction the client must not miss. Candy light fill, no border, the key phrase in bold.</p></div>
+
+    <p class="label">Item card</p>
+    <div class="demo">
+      <div class="item">
+        <h4>🎨 Life Drawing Class (10 attending)</h4>
+        <p class="kv">📍 <b>Location:</b> Your villa or a venue. Everything is set up for you.</p>
+        <p class="kv">⏰ <b>Time:</b> Daytime or early evening, to be confirmed with you.</p>
+        <p class="sub">What's Included?</p>
+        <ul class="inc">
+          <li>🎨 A nude male model posing while your group sketches</li>
+          <li>✏️ All drawing materials provided. No artistic ability needed.</li>
+          <li>🏆 Group games and drawing challenges</li>
+          <li>📸 Photo time at the end</li>
+          <li>🥂 Pairs well with a bottomless brunch or a villa afternoon before your night out</li>
+        </ul>
+        <p class="price-line">💷 <span class="amount">£35pp</span> · £350 group total at a venue</p>
+        <p class="caveat">The villa version has travel and setup fees on top. We will provide a quote once you confirm the location.</p>
+      </div>
+      <p class="demo-caption">One card per booked activity. Heading with rule, label and value lines, the included list, then the price line and its caveat. This is the structure Liam signed off on, re-skinned.</p></div>
+
+    <p class="label">Sign-off</p>
+    <div class="demo"><p class="signoff">Once your deposit is in, your place is secured. Any questions before the trip, just message us. x</p>
+      <p class="demo-caption">Centred, grey, the last thing on every document. Ends with the register's close.</p></div>
+  </div>
+
+  <!-- EMOJI -->
+  <div class="sec">
+    <h2 class="h2">😀 Emoji</h2>
+    <p class="lead">Emoji are the icon system. No SVG icons, no icon fonts. Every heading, pill and list item leads with one.</p>
+    <ul class="rules">
+      <li>💜 The purple heart is the only heart used on Pretty Intricate.</li>
+      <li>🎵 Use 🎵 not 🎶, and 📱 not 📲. Both alternatives render badly.</li>
+      <li>🚫 Banned because they render in monochrome: ⚽ 🏟 🎧 🖤 🏝 🍴</li>
+      <li>🧪 A new emoji must pass the colour test before use: rendered through Playwright, more than 60 pixels with a channel spread above 40 confirms it is in colour.</li>
+      <li>1️⃣ One emoji per line. It goes first, then a space, then the text. Never two in a row, never one at the end of a sentence except the 💜 after a name.</li>
+    </ul>
+  </div>
+
+  <!-- VOICE -->
+  <div class="sec">
+    <h2 class="h2">💬 Voice</h2>
+    <p class="lead">Casual, warm, British. Two registers depending on who is reading.</p>
+    <div class="grid2">
+      <div class="voice">
+        <h4>💜 Girls</h4>
+        <p>Address them as <b>lovely</b>. Close with <b>x</b>.</p>
+        <div class="sample">Hi lovely, your cheeky butler is locked in for Saturday. Here is everything you need. x</div>
+      </div>
+      <div class="voice">
+        <h4>💙 Boys</h4>
+        <p>Address them as <b>lads</b>. Close with <b>cheers</b>.</p>
+        <div class="sample">Alright lads, your boat is booked for Saturday. Here is everything you need. Cheers</div>
+      </div>
+    </div>
+    <p class="label">Rules for both</p>
+    <ul class="rules">
+      <li>🔠 Normal sentence case. A capital at the start of every sentence and on names and places. Lowercase only is wrong.</li>
+      <li>📖 Literal language only. No idioms, analogies or figures of speech. Say exactly what is booked, when, where, and what it costs.</li>
+      <li>✂️ Short sentences. One idea each.</li>
+      <li>🚫 No em dashes or en dashes. Use a full stop or a comma instead.</li>
+      <li>🙂 Warm, not gushing. No exclamation marks in a row, no cheerleading.</li>
+    </ul>
+  </div>
+
+  <!-- LAYOUT AND BUILD -->
+  <div class="sec">
+    <h2 class="h2">📐 Layout and build</h2>
+    <p class="lead">How the page is put together, and the technical rules that keep it rendering correctly everywhere.</p>
+    <ul class="rules">
+      <li>🃏 <b>One white card</b> on a blush page, maximum width 900px, centred with <code>margin: 0 auto</code>, 24px corner radius, overflow hidden so the hero bleeds to the edges.</li>
+      <li>↔️ <b>Spacing:</b> 48px side padding inside the card, 36px between sections, 20px between cards in a grid. On phones, 22px sides and single columns.</li>
+      <li>🖼️ <b>Photographs</b> are full-bleed or washed, never boxed with a border. Hero height 460px on desktop, 360px on mobile.</li>
+      <li>📄 <b>DOCTYPE</b> first, then <code>&lt;meta charset="UTF-8"&gt;</code> as the first line in the head, or emoji render as garbled symbols.</li>
+      <li>🔗 <b>Open Graph tags</b> on every shareable page so WhatsApp shows a preview card with the logo.</li>
+      <li>🧷 <b>Images</b> are base64 embedded when a PDF or PNG is rendered through Playwright, because the CDN blocks it. CDN links are fine on live Shopify pages.</li>
+      <li>📁 <b>Files</b> for GitHub Pages end in <code>.html</code>, never <code>.htm</code>. Use <code>top/right/bottom/left: 0</code> rather than <code>inset: 0</code> for Shopify.</li>
+      <li>🚫 <b>No italics</b> and no black. Both are disabled in the stylesheet.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="foot">
+    <img class="logo" src="https://assets.cdn.filesafe.space/1vA1AJ4I5RrqbeQNHvSv/media/6a28f4692c82431d9ec62032.png" alt="Pretty Intricate">
+    <div class="brand">Pretty Intricate<span>prettyintricate.co.uk · x</span></div>
+    <img class="qr" src="https://assets.cdn.filesafe.space/1vA1AJ4I5RrqbeQNHvSv/media/6a333cd50a683b64fecd21c3.png" alt="Pretty Intricate QR code">
+  </div>
+
+</div>
+</body>
+</html>
