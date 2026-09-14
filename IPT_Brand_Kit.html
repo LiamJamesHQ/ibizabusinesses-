@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ibiza Party Transfers Brand Kit</title>
+<meta property="og:title" content="Ibiza Party Transfers Brand Kit">
+<meta property="og:description" content="Logo, colour, type, components, emoji, voice and build rules for every Ibiza Party Transfers asset.">
+<meta property="og:image" content="https://assets.cdn.filesafe.space/V6PrBRAEkyF3deHWSoO4/media/6aa3ca47060c86b932c1a30d.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --lavender:#f7ecfe;
+  --white:#ffffff;
+  --lilac:#ead4fb;
+  --lilac-border:#d2b1f5;
+  --purple:#bf2df2;
+  --aqua:#7ef7f0;
+  --indigo:#2b2a80;
+  --navy:#1f1b5b;
+  --veil:#3c1470;
+  --green:#8ff37e;
+  --grad-a:#5ec8ff;
+  --grad-b:#bf2df2;
+  --ink:#2b2b33;
+  --grey:#6b6b78;
+  --sans:'Poppins','Segoe UI',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--lavender);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+i,em,.italic{font-style:normal !important}
+img{max-width:100%;display:block}
+p{margin:0 0 12px}
+code{font-family:var(--sans);font-weight:600;color:var(--indigo)}
+
+.card{max-width:900px;margin:32px auto;background:var(--white);border-radius:24px;overflow:hidden;box-shadow:0 14px 44px rgba(60,20,112,.14)}
+
+/* Hero */
+.hero{position:relative;height:480px;overflow:hidden;
+  background:
+    radial-gradient(circle at 18% 28%, rgba(191,45,242,.55) 0, rgba(191,45,242,0) 28%),
+    radial-gradient(circle at 78% 22%, rgba(94,200,255,.45) 0, rgba(94,200,255,0) 26%),
+    radial-gradient(circle at 60% 78%, rgba(255,80,200,.35) 0, rgba(255,80,200,0) 30%),
+    linear-gradient(160deg,#141040 0%,#2a1560 48%,#0f0c30 100%);}
+.hero::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;
+  background:linear-gradient(180deg,rgba(60,20,112,.35) 0%,rgba(60,20,112,.62) 55%,rgba(31,27,91,.88) 100%);}
+.hero-logo{position:absolute;top:26px;left:34px;width:150px;z-index:2}
+.hero-copy{position:absolute;left:48px;right:48px;bottom:44px;z-index:2}
+.hero-eyebrow{display:inline-block;margin:0 0 10px;font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--lilac)}
+.hero-title{margin:0 0 10px;font-weight:700;font-size:44px;line-height:1.15;color:#fff}
+.hero-title .name{color:var(--aqua)}
+.hero-sub{margin:0 0 18px;font-size:18px;color:#fff}
+.hero-pills{display:flex;flex-wrap:wrap;gap:10px}
+.hero-pill{background:rgba(20,12,50,.55);border:1px solid rgba(255,255,255,.35);color:#fff;font-weight:500;font-size:14.5px;padding:9px 16px;border-radius:999px;backdrop-filter:blur(3px)}
+.hero-note{position:absolute;right:22px;top:26px;z-index:2;background:rgba(255,255,255,.88);color:var(--navy);font-size:13px;font-weight:600;padding:6px 11px;border-radius:999px}
+
+/* Sections */
+.sec{padding:36px 48px 20px}
+.h2{display:flex;align-items:center;gap:12px;margin:0 0 6px;padding-bottom:10px;border-bottom:2px solid var(--lilac-border);font-weight:700;font-size:26px;line-height:1.25;color:var(--indigo)}
+.lead{margin:16px 0 22px;max-width:70ch}
+.rules{list-style:none;margin:0 0 18px;padding:0}
+.rules li{margin:0 0 10px}
+.rules li b{color:var(--indigo)}
+.label{margin:22px 0 10px;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--purple)}
+.label:first-child{margin-top:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+
+/* Logo tiles */
+.logo-tile{border:1px solid var(--lilac-border);border-radius:16px;overflow:hidden;background:var(--white)}
+.logo-tile .ground{height:170px;display:flex;align-items:center;justify-content:center;padding:18px}
+.logo-tile .ground.photo{background:
+    radial-gradient(circle at 25% 30%, rgba(191,45,242,.55) 0, rgba(191,45,242,0) 30%),
+    radial-gradient(circle at 75% 25%, rgba(94,200,255,.4) 0, rgba(94,200,255,0) 28%),
+    linear-gradient(160deg,#141040 0%,#2a1560 50%,#0f0c30 100%)}
+.logo-tile .ground.plain{background:var(--white)}
+.logo-tile .ground.lav{background:var(--lavender)}
+.logo-tile .ground img{max-height:130px;width:auto}
+.logo-tile .meta{padding:12px 16px 14px;border-top:1px solid #ecdcf7}
+.logo-tile .meta b{display:block;font-weight:600;font-size:16px;color:var(--indigo)}
+.logo-tile .meta span{font-size:13.5px;line-height:1.45;color:var(--grey)}
+
+/* Swatches */
+.swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.sw{border:1px solid #ecdcf7;border-radius:14px;overflow:hidden}
+.sw .chip{height:70px}
+.sw .meta{padding:10px 13px 12px}
+.sw .meta b{display:block;font-weight:600;font-size:15px;color:var(--ink)}
+.sw .meta code{font-size:13.5px}
+.sw .meta span{display:block;font-size:13px;line-height:1.4;color:var(--grey);margin-top:3px}
+
+/* Type samples */
+.type-row{display:grid;grid-template-columns:1fr 220px;gap:20px;align-items:baseline;padding:14px 0;border-bottom:1px solid #ecdcf7}
+.type-row:last-child{border-bottom:0}
+.type-row .spec{font-size:13.5px;color:var(--grey);line-height:1.45}
+.t-doc{font-weight:700;font-size:40px;line-height:1.12;color:var(--indigo)}
+.t-sec{font-weight:700;font-size:26px;color:var(--indigo)}
+.t-card{font-weight:600;font-size:19px;color:var(--indigo)}
+.t-body{font-size:16px;color:var(--ink)}
+.t-label{font-size:16px;font-weight:600;color:var(--indigo)}
+.t-eyebrow{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--purple)}
+.t-small{font-size:14px;color:var(--grey)}
+
+/* Buttons and pills */
+.btns{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{display:inline-block;font-weight:700;font-size:15px;line-height:1.2;padding:13px 24px;border-radius:999px;text-decoration:none;border:0}
+.btn-aqua{background:var(--aqua);color:var(--navy)}
+.btn-purple{background:var(--purple);color:#fff}
+.btn-green{background:var(--green);color:var(--navy)}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{background:var(--lilac);border:1px solid var(--lilac-border);color:var(--indigo);font-weight:500;font-size:14.5px;line-height:1.3;padding:7px 14px;border-radius:999px}
+.dark-strip{background:linear-gradient(160deg,#141040 0%,#2a1560 60%,#0f0c30 100%);border-radius:16px;padding:22px 24px}
+.status{background:var(--white);border:1px solid var(--lilac-border);border-radius:999px;padding:13px 18px;text-align:center;font-weight:600;color:var(--indigo)}
+
+/* Feature cards */
+.fcard{background:var(--white);border:1px solid #ecdcf7;border-radius:14px;padding:22px 22px 20px;text-align:center;box-shadow:0 8px 24px rgba(60,20,112,.06)}
+.fcard .ico{font-size:30px;line-height:1;margin:0 0 10px}
+.fcard h4{margin:0 0 6px;font-weight:600;font-size:18px;color:var(--indigo)}
+.fcard p{margin:0;font-size:15px}
+.fcard.hi{background:linear-gradient(135deg,var(--grad-a) 0%,var(--grad-b) 100%);border:0;color:#fff}
+.fcard.hi h4,.fcard.hi p{color:#fff}
+.dcard{background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:22px 22px 20px;text-align:center;color:#fff}
+.dcard .ico{font-size:30px;line-height:1;margin:0 0 10px}
+.dcard h4{margin:0 0 6px;font-weight:600;font-size:18px;color:#fff}
+.dcard p{margin:0;font-size:15px;color:#fff}
+.dcard.hi{background:linear-gradient(160deg,rgba(90,31,143,.85) 0%,rgba(138,43,214,.85) 100%);border:1px solid rgba(210,177,245,.6)}
+.dcard .link{display:inline-block;margin-top:10px;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--lilac)}
+
+/* Offset photo frame */
+.frame{position:relative;padding:0 0 18px 18px}
+.frame::before{content:"";position:absolute;top:18px;right:18px;bottom:0;left:0;background:linear-gradient(135deg,var(--grad-a) 0%,var(--grad-b) 100%);border-radius:6px}
+.frame .ph{position:relative;height:230px;border-radius:6px;overflow:hidden;
+  background:
+    radial-gradient(circle at 30% 40%, rgba(191,45,242,.5) 0, rgba(191,45,242,0) 32%),
+    radial-gradient(circle at 70% 60%, rgba(94,200,255,.4) 0, rgba(94,200,255,0) 30%),
+    linear-gradient(160deg,#141040 0%,#2a1560 55%,#0f0c30 100%)}
+.frame .ph span{position:absolute;right:12px;bottom:12px;background:rgba(255,255,255,.88);color:var(--navy);font-size:12.5px;font-weight:600;padding:5px 10px;border-radius:999px}
+
+/* Panels and item cards */
+.panel{background:var(--lilac);border-radius:14px;padding:22px 26px}
+.panel p{margin:0}
+.panel b{color:var(--indigo)}
+.item{background:var(--lavender);border:1px solid var(--lilac-border);border-radius:14px;padding:22px 26px 20px}
+.item h4{display:flex;align-items:center;gap:10px;margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid var(--lilac-border);font-weight:600;font-size:19px;color:var(--indigo)}
+.kv{margin:0 0 8px}
+.kv b{color:var(--indigo);font-weight:600}
+.sub{margin:14px 0 8px;font-weight:600;color:var(--indigo)}
+.inc{list-style:none;margin:0 0 14px;padding:0}
+.inc li{margin:0 0 7px}
+.price-line{margin:0 0 6px;font-weight:700;font-size:18px;color:var(--indigo)}
+.price-line .amount{color:var(--purple)}
+.caveat{margin:0;font-size:14px;color:var(--grey)}
+.signoff{text-align:center;color:var(--grey);font-size:16px;padding:8px 20px 0}
+.demo{margin:0 0 26px}
+.demo-caption{margin:10px 0 0;font-size:14px;color:var(--grey)}
+
+/* Voice */
+.voice{background:var(--lavender);border:1px solid var(--lilac-border);border-radius:14px;padding:22px 24px}
+.voice h4{margin:0 0 10px;font-weight:600;font-size:19px;color:var(--indigo)}
+.voice .sample{background:var(--white);border-radius:12px;padding:14px 16px;margin:12px 0 0;color:var(--ink)}
+
+/* Footer band */
+.foot{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:32px 48px;background:var(--navy);color:#fff}
+.foot img.logo{width:150px}
+.foot img.qr{width:108px;border-radius:8px}
+.foot .brand{text-align:center;font-weight:600;font-size:18px;color:#fff}
+.foot .brand span{display:block;font-weight:400;font-size:14px;color:var(--lilac);margin-top:2px}
+
+@media (max-width:680px){
+  .card{margin:0;border-radius:0}
+  .hero{height:440px}
+  .hero-logo{width:120px;top:18px;left:20px}
+  .hero-copy{left:22px;right:22px;bottom:28px}
+  .hero-title{font-size:32px}
+  .hero-sub{font-size:16px}
+  .hero-note{top:auto;bottom:auto;right:14px;top:18px}
+  .sec{padding:28px 22px 14px}
+  .grid2,.grid3{grid-template-columns:1fr}
+  .swatches{grid-template-columns:1fr 1fr}
+  .type-row{grid-template-columns:1fr}
+  .t-doc{font-size:32px}
+  .foot{flex-direction:column;padding:28px 22px}
+}
+</style>
+</head>
+<body>
+<div class="card">
+
+  <!-- HERO: the component in use. Ground is a placeholder; swap for a full-bleed photograph or a four-photo collage. -->
+  <div class="hero">
+    <img class="hero-logo" src="https://assets.cdn.filesafe.space/V6PrBRAEkyF3deHWSoO4/media/6a2900e7edb8dba658b90457.png" alt="Ibiza Party Transfers">
+    <div class="hero-note">Placeholder ground. Swap for a full-bleed photograph.</div>
+    <div class="hero-copy">
+      <span class="hero-eyebrow">Transfers 🚐</span>
+      <h1 class="hero-title">Ibiza Party Transfers <span class="name">Brand Kit</span></h1>
+      <p class="hero-sub">Every rule for every transfer document, shown live.</p>
+      <div class="hero-pills"><span class="hero-pill">📅 Friday 16th October</span><span class="hero-pill">⏰ 12:10 pm pickup</span><span class="hero-pill">👥 16 guests</span></div>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <div class="sec">
+    <p class="label">Brand kit</p>
+    <p class="lead">This is the reference for every Ibiza Party Transfers asset: quotes, booking confirmations, reminders, product pages. Each rule is shown live, so the document doubles as a working example. The type and colours match the website exactly. The one deliberate change is that every button and pill is rounded.</p>
+  </div>
+
+  <!-- LOGO -->
+  <div class="sec">
+    <h2 class="h2">🏷️ Logo</h2>
+    <p class="lead">Every Ibiza Party Transfers document carries the logo. Three assets, each with one job.</p>
+    <div class="grid3">
+      <div class="logo-tile">
+        <div class="ground photo"><img src="https://assets.cdn.filesafe.space/V6PrBRAEkyF3deHWSoO4/media/6a2900e7edb8dba658b90457.png" alt="Transparent logo"></div>
+        <div class="meta"><b>Transparent PNG</b><span>The default. Always attempted first, on every ground.</span></div>
+      </div>
+      <div class="logo-tile">
+        <div class="ground plain"><img src="https://assets.cdn.filesafe.space/V6PrBRAEkyF3deHWSoO4/media/6aa3ca47060c86b932c1a30d.jpg" alt="Solid background logo"></div>
+        <div class="meta"><b>Solid JPG</b><span>Fallback only, on a ground that matches its own background. Also the Open Graph preview image.</span></div>
+      </div>
+      <div class="logo-tile">
+        <div class="ground lav"><img src="https://assets.cdn.filesafe.space/V6PrBRAEkyF3deHWSoO4/media/6a3093e9e5b9322bddfac5fd.png" alt="QR code"></div>
+        <div class="meta"><b>QR code</b><span>Foot of every document, beside the logo.</span></div>
+      </div>
+    </div>
+    <p class="label">Rules</p>
+    <ul class="rules">
+      <li>✅ <b>Transparent first.</b> The transparent PNG is used on heroes, dark bands and photographs. The solid JPG only appears where its square edge disappears, never in a hero.</li>
+      <li>🌙 <b>The logo is white lettering</b>, so it lives on dark grounds: the hero, the navy footer band, the purple veil. It never sits on white or lavender.</li>
+      <li>📐 <b>Clear space</b> around the logo equals the height of the letter i on every side. Minimum width on screen is 120px.</li>
+      <li>🚫 <b>Never</b> stretch, recolour, rotate, or add a drop shadow.</li>
+      <li>📱 <b>QR code</b> goes at the foot of every document next to the logo, inside the navy footer band.</li>
+      <li>🔗 <b>Open Graph image</b> on every shareable page is the solid JPG, so the WhatsApp preview shows a filled square.</li>
+    </ul>
+  </div>
+
+  <!-- COLOUR -->
+  <div class="sec">
+    <h2 class="h2">🎨 Colour</h2>
+    <p class="lead">Electric purple and aqua on deep navy, lifted straight from the website. Indigo does the reading work on white so the bright colours stay for buttons and accents.</p>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#bf2df2"></div><div class="meta"><b>Electric purple</b><code>#BF2DF2</code><span>Purple button, eyebrows on white, prices, the footer accent</span></div></div>
+      <div class="sw"><div class="chip" style="background:#7ef7f0"></div><div class="meta"><b>Aqua</b><code>#7EF7F0</code><span>Primary button, eyebrows on dark, the client's name in a hero</span></div></div>
+      <div class="sw"><div class="chip" style="background:#2b2a80"></div><div class="meta"><b>Indigo</b><code>#2B2A80</code><span>Headings, labels and pill text on white</span></div></div>
+      <div class="sw"><div class="chip" style="background:#1f1b5b"></div><div class="meta"><b>Deep navy</b><code>#1F1B5B</code><span>Footer band, dark strips, text on aqua and green buttons</span></div></div>
+      <div class="sw"><div class="chip" style="background:#3c1470"></div><div class="meta"><b>Purple veil</b><code>#3C1470</code><span>Laid over every photograph at 60 to 85 percent</span></div></div>
+      <div class="sw"><div class="chip" style="background:linear-gradient(135deg,#5ec8ff,#bf2df2)"></div><div class="meta"><b>Accent gradient</b><code>#5EC8FF to #BF2DF2</code><span>Highlight cards and the offset photo frame</span></div></div>
+      <div class="sw"><div class="chip" style="background:#ead4fb"></div><div class="meta"><b>Lilac</b><code>#EAD4FB</code><span>Pills, info panels, eyebrows on dark</span></div></div>
+      <div class="sw"><div class="chip" style="background:#d2b1f5"></div><div class="meta"><b>Lilac border</b><code>#D2B1F5</code><span>Every border and heading rule</span></div></div>
+      <div class="sw"><div class="chip" style="background:#f7ecfe;border-bottom:1px solid #ecdcf7"></div><div class="meta"><b>Lavender</b><code>#F7ECFE</code><span>Page background and item cards</span></div></div>
+      <div class="sw"><div class="chip" style="background:#8ff37e"></div><div class="meta"><b>WhatsApp green</b><code>#8FF37E</code><span>The WhatsApp button only</span></div></div>
+      <div class="sw"><div class="chip" style="background:#2b2b33"></div><div class="meta"><b>Charcoal</b><code>#2B2B33</code><span>Body text</span></div></div>
+      <div class="sw"><div class="chip" style="background:#ffffff;border-bottom:1px solid #ecdcf7"></div><div class="meta"><b>White</b><code>#FFFFFF</code><span>The card, hero titles, text on dark</span></div></div>
+    </div>
+    <p class="label">Rules</p>
+    <ul class="rules">
+      <li>💜 The purple heart is the only heart. Never 🖤.</li>
+      <li>⚡ Aqua and purple are accents and buttons, not fills for large areas. The only large bright area is the footer band, and that is navy.</li>
+      <li>🖋️ Indigo carries headings on white. Over a photograph headings turn white.</li>
+      <li>🚫 No black text anywhere. Charcoal is as dark as it goes.</li>
+    </ul>
+  </div>
+
+  <!-- TYPOGRAPHY -->
+  <div class="sec">
+    <h2 class="h2">✍️ Typography</h2>
+    <p class="lead">One face, Poppins, exactly as the website uses it. Weight does the work: 700 for titles, 600 for headings and labels, 400 for reading.</p>
+    <div class="type-row"><div class="t-doc">Ibiza Transfers, Limos and Party Bus Booking</div><div class="spec">Document title. Poppins 700, 40px. Indigo on white, white on a hero.</div></div>
+    <div class="type-row"><div class="t-sec">How Booking Works</div><div class="spec">Section heading. Poppins 700, 26px, indigo, lilac rule beneath. Always led by an emoji.</div></div>
+    <div class="type-row"><div class="t-card">Private VIP Party Bus</div><div class="spec">Card heading. Poppins 600, 19px, indigo.</div></div>
+    <div class="type-row"><div class="t-eyebrow">Party bus hire Ibiza</div><div class="spec">Eyebrow. Poppins 700, 12px, tracked capitals. Purple on white, aqua or lilac on dark.</div></div>
+    <div class="type-row"><div class="t-body">Your group only, with LED lights, a sound system and fizz on board.</div><div class="spec">Body. Poppins 400, 16px, line height 1.65, charcoal.</div></div>
+    <div class="type-row"><div class="t-label">Pick up:</div><div class="spec">Label. Poppins 600, 16px, indigo. Value follows in body weight.</div></div>
+    <div class="type-row"><div class="t-small">Drinks on board subject to availability.</div><div class="spec">Small print. Poppins 400, 14px, grey.</div></div>
+    <p class="label">Rules</p>
+    <ul class="rules">
+      <li>🚫 No italics anywhere. The italic style is disabled in every file.</li>
+      <li>🔠 Headings are title case. Body copy is sentence case with a capital at the start of every sentence and on names and places.</li>
+      <li>🔡 Eyebrows are the only place capitals are tracked out. Never track a heading or a button.</li>
+      <li>📏 Body lines run no longer than about 70 characters. Wider than that, add a column.</li>
+      <li>🔤 Fallbacks are Segoe UI then Arial, so nothing breaks if Poppins fails to load.</li>
+    </ul>
+  </div>
+
+  <!-- COMPONENTS -->
+  <div class="sec">
+    <h2 class="h2">🧩 Components</h2>
+    <p class="lead">Every piece a document is built from, rendered here exactly as it should appear. Copy these, do not redraw them.</p>
+
+    <p class="label">Hero</p>
+    <p>See the top of this page. Full-bleed photograph or four-photo collage, no padding, purple veil heaviest at the bottom. Eyebrow in tracked lilac capitals with an emoji, then the title in white Poppins 700 with the client's name in aqua, then a one-line subtitle, then the pills row. Everything sits inside the hero. Transparent logo top left.</p>
+
+    <p class="label">Buttons</p>
+    <div class="demo">
+      <div class="btns"><a class="btn btn-aqua" href="#">Book now</a><a class="btn btn-purple" href="#">Book now</a><a class="btn btn-green" href="#">💬 WhatsApp Nikki</a></div>
+      <p class="demo-caption">Aqua is the primary action. Purple is the secondary action or a button on a dark ground. Green is reserved for WhatsApp. All fully rounded, all Poppins 700, sentence case.</p></div>
+
+    <p class="label">Pills row</p>
+    <div class="demo">
+      <div class="pills"><span class="pill">📅 Friday 16th October</span><span class="pill">⏰ 12:10 pm pickup</span><span class="pill">👥 16 guests</span><span class="pill">✈️ Flight tracked</span></div>
+      <p class="demo-caption">On white the pills are lilac with an indigo label. Inside a hero they are frosted dark with a pale border, as at the top of the page. Emoji first, then text.</p></div>
+
+    <p class="label">Status banner</p>
+    <div class="demo"><div class="status">✅ Balance received. Your transfer is fully paid.</div>
+      <p class="demo-caption">Sits directly under the hero on confirmations. One line, one emoji, indigo on white with a lilac border, fully rounded.</p></div>
+
+    <p class="label">Feature cards</p>
+    <div class="demo">
+      <div class="grid2">
+        <div class="fcard"><div class="ico">🚐</div><h4>Private VIP Party Bus</h4><p>Your group only, with LED lights, a sound system and fizz on board.</p></div>
+        <div class="fcard"><div class="ico">✈️</div><h4>Flight Tracked Pickups</h4><p>We watch your flight, so a late landing is never a problem.</p></div>
+        <div class="fcard"><div class="ico">💬</div><h4>WhatsApp Support</h4><p>Real people with real local knowledge, ready before and during your trip.</p></div>
+        <div class="fcard hi"><div class="ico">🎀</div><h4>Want the Whole Trip Planned?</h4><p>Hen and stag itineraries, boats, villas and nights out, sorted by our partner Pretty Intricate.</p></div>
+      </div>
+      <p class="demo-caption">Centred emoji, heading, one sentence. White with a faint shadow on white pages. The gradient variant marks the one card you want noticed, usually the cross-sell to Pretty Intricate. One gradient card per grid at most.</p></div>
+
+    <p class="label">Feature cards on a dark ground</p>
+    <div class="demo">
+      <div class="dark-strip">
+        <div class="grid2">
+          <div class="dcard"><div class="ico">🚐</div><h4>Private VIP Party Bus</h4><p>Your group only, with LED lights, a sound system and fizz on board.</p></div>
+          <div class="dcard hi"><div class="ico">🎀</div><h4>Want the Whole Trip Planned?</h4><p>Sorted by our partner Pretty Intricate.</p><span class="link">Take a look</span></div>
+        </div>
+      </div>
+      <p class="demo-caption">The same cards over a photograph or dark strip: frosted black with a thin white border, the highlight card in a translucent purple.</p></div>
+
+    <p class="label">Offset photo frame</p>
+    <div class="demo">
+      <div class="grid2">
+        <div class="frame"><div class="ph"><span>Placeholder. Swap for a photograph.</span></div></div>
+        <div>
+          <p class="label" style="margin-top:0">Our fleet</p>
+          <p class="t-card" style="margin-bottom:8px">Ibiza's Favourite Transfers and Party Bus Providers</p>
+          <p>A fleet of luxury vehicles from 4 to 20 seats, with cava and drinks on board to make your trip smooth and enjoyable.</p>
+          <a class="btn btn-aqua" href="#">Get in touch</a>
+        </div>
+      </div>
+      <p class="demo-caption">A photograph with the accent gradient offset behind it, paired with copy and a button. The one decorative device in the system, so use it once per page at most.</p></div>
+
+    <p class="label">Info panel</p>
+    <div class="demo"><div class="panel"><p>Your driver will meet you in arrivals holding a board with <b>your name on it</b>. If your flight is delayed we already know, because we track it. Nothing to do on your side.</p></div>
+      <p class="demo-caption">One important instruction the client must not miss. Lilac fill, no border, the key phrase in bold.</p></div>
+
+    <p class="label">Item card</p>
+    <div class="demo">
+      <div class="item">
+        <h4>🚐 VIP Party Bus Transfer (16 guests)</h4>
+        <p class="kv">📍 <b>Pick up:</b> Ibiza Airport, arrivals hall. Your driver holds a name board.</p>
+        <p class="kv">🏁 <b>Drop off:</b> Your villa in San Antonio.</p>
+        <p class="kv">📅 <b>Date:</b> Friday 16th October</p>
+        <p class="kv">⏰ <b>Time:</b> 12:10 pm pickup, timed to your landing.</p>
+        <p class="sub">What's Included?</p>
+        <ul class="inc">
+          <li>🚐 Private party bus for your group only</li>
+          <li>🎵 Sound system with your own playlist</li>
+          <li>💡 LED lights on board</li>
+          <li>🥂 Fizz and glasses waiting on the bus</li>
+          <li>✈️ Flight tracking, so a delay never costs you the transfer</li>
+        </ul>
+        <p class="price-line">💶 <span class="amount">€350 total</span> · €50 deposit paid</p>
+        <p class="caveat">Figures are examples only. Balance is due before the trip and we will confirm the exact date and amount well in advance.</p>
+      </div>
+      <p class="demo-caption">One card per booked transfer. Heading with rule, label and value lines, the included list, then the price line and its caveat. Lavender fill with a lilac border.</p></div>
+
+    <p class="label">Sign-off</p>
+    <div class="demo"><p class="signoff">Once your deposit is in, your transfer is locked in. Any questions before the trip, just message us. x</p>
+      <p class="demo-caption">Centred, grey, the last thing on every document before the footer band. Ends with the register's close.</p></div>
+  </div>
+
+  <!-- EMOJI -->
+  <div class="sec">
+    <h2 class="h2">😀 Emoji</h2>
+    <p class="lead">Emoji are the icon system. No SVG icons, no icon fonts. Every heading, pill, feature card and list item leads with one.</p>
+    <ul class="rules">
+      <li>🚐 The transfer set: 🚐 ✈️ 🥂 📍 🏁 📅 ⏰ 👥 🧳 💬 💡 🎵 💶. Reach for these before anything else.</li>
+      <li>💜 The purple heart is the only heart used on Ibiza Party Transfers.</li>
+      <li>🎵 Use 🎵 not 🎶, and 📱 not 📲. Both alternatives render badly.</li>
+      <li>🚫 Banned because they render in monochrome: ⚽ 🏟 🎧 🖤 🏝 🍴</li>
+      <li>🧪 A new emoji must pass the colour test before use: rendered through Playwright, more than 60 pixels with a channel spread above 40 confirms it is in colour.</li>
+      <li>1️⃣ One emoji per line. It goes first, then a space, then the text. Never two in a row.</li>
+    </ul>
+  </div>
+
+  <!-- VOICE -->
+  <div class="sec">
+    <h2 class="h2">💬 Voice</h2>
+    <p class="lead">Casual, warm, British. Transfers serve hens and stags alike, so the register follows who is reading.</p>
+    <div class="grid2">
+      <div class="voice">
+        <h4>💜 Girls</h4>
+        <p>Address them as <b>lovely</b>. Close with <b>x</b>.</p>
+        <div class="sample">Hi lovely, your party bus is booked for Friday. Here is everything you need for the airport. x</div>
+      </div>
+      <div class="voice">
+        <h4>💙 Boys</h4>
+        <p>Address them as <b>lads</b>. Close with <b>cheers</b>.</p>
+        <div class="sample">Alright lads, your party bus is booked for Friday. Here is everything you need for the airport. Cheers</div>
+      </div>
+    </div>
+    <p class="label">Rules for both</p>
+    <ul class="rules">
+      <li>🔠 Normal sentence case. A capital at the start of every sentence and on names and places. Lowercase only is wrong.</li>
+      <li>📖 Literal language only. No idioms, analogies or figures of speech. Say exactly what is booked, when, where, and what it costs.</li>
+      <li>✂️ Short sentences. One idea each.</li>
+      <li>🚫 No em dashes or en dashes. Use a full stop or a comma instead.</li>
+      <li>🙂 Warm, not gushing. No exclamation marks in a row, no cheerleading.</li>
+      <li>🎀 Every transfer document mentions Pretty Intricate once, in the highlight card or the sign-off, because the transfer is usually the start of a bigger trip.</li>
+    </ul>
+  </div>
+
+  <!-- LAYOUT AND BUILD -->
+  <div class="sec">
+    <h2 class="h2">📐 Layout and build</h2>
+    <p class="lead">How the page is put together, and the technical rules that keep it rendering correctly everywhere.</p>
+    <ul class="rules">
+      <li>🃏 <b>One white card</b> on a lavender page, maximum width 900px, centred with <code>margin: 0 auto</code>, 24px corner radius, overflow hidden so the hero and footer band bleed to the edges.</li>
+      <li>↔️ <b>Spacing:</b> 48px side padding inside the card, 36px between sections, 20px between cards in a grid. On phones, 22px sides and single columns.</li>
+      <li>🖼️ <b>Photographs</b> are always veiled in purple and never boxed with a plain border. Hero height 480px on desktop, 440px on mobile. The hero ends on a hard edge, no dissolve.</li>
+      <li>🌙 <b>Dark bands</b> are allowed between white sections for feature cards and calls to action. Never two in a row.</li>
+      <li>🔘 <b>Every button and pill is fully rounded.</b> This is the one place the documents depart from the website.</li>
+      <li>📄 <b>DOCTYPE</b> first, then <code>&lt;meta charset="UTF-8"&gt;</code> as the first line in the head, or emoji render as garbled symbols.</li>
+      <li>🔗 <b>Open Graph tags</b> on every shareable page so WhatsApp shows a preview card with the solid logo.</li>
+      <li>🧷 <b>Images</b> are base64 embedded when a PDF or PNG is rendered through Playwright, because the CDN blocks it. CDN links are fine on live pages.</li>
+      <li>📁 <b>Files</b> for GitHub Pages end in <code>.html</code>, never <code>.htm</code>. Use <code>top/right/bottom/left: 0</code> rather than <code>inset: 0</code> for Shopify.</li>
+      <li>🚫 <b>No italics</b> and no black. Both are disabled in the stylesheet.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER BAND -->
+  <div class="foot">
+    <img class="logo" src="https://assets.cdn.filesafe.space/V6PrBRAEkyF3deHWSoO4/media/6a2900e7edb8dba658b90457.png" alt="Ibiza Party Transfers">
+    <div class="brand">Ibiza Party Transfers<span>ibizapartytransfers.com · 07510 664867</span></div>
+    <img class="qr" src="https://assets.cdn.filesafe.space/V6PrBRAEkyF3deHWSoO4/media/6a3093e9e5b9322bddfac5fd.png" alt="Ibiza Party Transfers QR code">
+  </div>
+
+</div>
+</body>
+</html>
